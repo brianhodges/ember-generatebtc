@@ -1,0 +1,22 @@
+<h1>New Bitcoin Address &emsp; <button class="btn btn-primary" {{action 'newAddress'}}>Generate</button></h1>
+
+<strong>Address (compressed):</strong><br/>
+{{address}}
+{{qr-code text=address colorLight="#F7F7F7" width=100 height=100 correctLevel="L"}}
+
+<br/><br/>
+
+<strong>Public Key (compressed):</strong><br/>
+{{pub_key}}
+
+<br/><br/><br/>
+
+<strong>Private Key:</strong><br/>
+{{priv_key}}
+{{qr-code text=priv_key colorLight="#F7F7F7" width=100 height=100 correctLevel="L"}}
+<br/>
+<strong>Private Key (WIF Compressed):</strong><br/>
+{{wif_priv_key}}
+{{qr-code text=wif_priv_key colorLight="#F7F7F7" width=100 height=100 correctLevel="L"}}
+
+<br/><br/><br/>
